@@ -1,2 +1,2 @@
 # Blog
-This is just a normal website page for Weekly Blog.
+This is just a normal web page for a weekly blog of short stories by me Tevy Tunsay.
