@@ -53,7 +53,7 @@ function loadStoryContent() {
             })
             .catch(error => {
                 storyContentElement.innerText = 'Failed to load story content.';
-                console.error('Error:', error);
+                // console.error('Error:', error);
             });
     } else if (storyContentElement) {
         storyContentElement.innerText = 'No story selected.';
