@@ -9,11 +9,12 @@ function loadStoryList() {
                 const storyDiv = document.createElement('div');
                 storyDiv.className = 'story-block';
                 storyDiv.innerHTML = `
-                    <button class="share-btn" onclick="shareOptions('${story.title}', 'story.html?id=${story.id}')">Share</button>
+                <!-- <button class="share-btn" onclick="shareOptions('${story.title}', 'story.html?id=${story.id}')">Share</button> -->
                     <h3 class="story-title">${story.title}</h3>
                     <p class="story-highlight">${story.highlight}</p>
                     <p class="story-info">Publish Date <span class="publish-date">${story.date}</span></p>
                     <a href="story.html?id=${story.id}" class="read-more">Read More</a>
+                    
                 `;
                 storiesSection.appendChild(storyDiv);
             });

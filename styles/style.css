@@ -1,7 +1,10 @@
 body {
     font-family: Arial, sans-serif;
+    font-size: 1.3em;
     margin: 0;
-    padding: 0;
+    text-align: justify; /* Justify the text for clean edges on both sides */
+    /* padding: 10px 20px; */
+    line-height: 1.5;
 }
 
 header {
@@ -11,6 +14,7 @@ header {
 header h1 {
     font-size: 48px;
     margin: 10px 0;
+    text-align: centre;
 }
 
 nav ul {
@@ -40,8 +44,8 @@ footer {
     text-align: center;
     line-height: 50px; /* Center the text vertically */
 }
-#recent-highlights {
-    padding: 20px;
+#page-heading {
+    /* padding: 20px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,9 +73,10 @@ footer {
     font-size: 0.8em;
     color: #666;
     margin-bottom: 1em;
+    
 }
 
-.author-name, .publish-date {
+.publish-date {
     font-weight: bold;
 }
 
@@ -103,7 +108,7 @@ footer {
     margin-bottom: 20px;
     width: 100%; /* Adjust the width to your preference */
     max-width: 800px; /* You can also set a maximum width if you like */
-    text-align: left;
+    text-align: justify;
     background-color: #fff; /* or any color you prefer */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds shadow for depth */
     margin-left: auto; /* Centers the block if width is less than 100% */
@@ -121,5 +126,26 @@ footer {
     line-height: 1.6; /* Adjust line height for better readability */
     max-width: 800px; /* Set a max-width for optimal reading length */
     margin: 0 auto; /* Center the container if it's not already */
-    font-size: 1.5em; /* Optional: Adjust font size for readability */
+    font-size: 1.3em; /* Optional: Adjust font size for readability */
+}
+
+
+/* ------ */
+/* Acknowlegement Page */
+.page-content {
+    /* padding: 15px; */
+    margin-bottom: 0px;
+    width: 100%; /* Adjust the width to your preference */
+    max-width: 1000px; /* You can also set a maximum width if you like */
+    margin-left: auto; /* Centers the block if width is less than 100% */
+    margin-right: auto; /* Centers the block if width is less than 100% */
+    font-size: 1.15em;
+    text-align: justify; /* Justify the text for clean edges on both sides */
+}
+#indent {
+    padding-left: 3em;
+    list-style-position: inside;
+}
+.page-content li {
+    margin-bottom: 10px; /* Adjust or remove as needed for space between items */
 }
