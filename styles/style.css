@@ -1,3 +1,8 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
 body {
     font-family: Arial, sans-serif;
     font-size: 1.3em;
@@ -38,13 +43,16 @@ nav ul li a {
 }
 
 footer {
+     /* position: fixed; */
     height: 50px;
     background-color: #333;
     color: white;
     text-align: center;
     line-height: 50px; /* Center the text vertically */
+    margin-top: 10%;
+
 }
-#page-heading {
+.page-heading {
     /* padding: 20px; */
     display: flex;
     flex-direction: column;
@@ -141,11 +149,47 @@ footer {
     margin-right: auto; /* Centers the block if width is less than 100% */
     font-size: 1.15em;
     text-align: justify; /* Justify the text for clean edges on both sides */
+   
 }
 #indent {
-    padding-left: 3em;
-    list-style-position: inside;
+    /* padding-left: 3em;
+    margin-left: 3em;
+    margin-right: 3em; */
+    width: 90%; 
 }
 .page-content li {
     margin-bottom: 10px; /* Adjust or remove as needed for space between items */
+}
+#box {
+    border: 0.5px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+/* ------ */
+/* Contact Page */
+
+.contact-info {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-info h1 {
+    color: #333333;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #0077cc;
 }
