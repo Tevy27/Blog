@@ -1,8 +1,12 @@
-// Functions for index.html
+// Functions for index.html to load story list higlight
 function loadStoryList() {
     fetch('stories.json')
         .then(response => response.json())
         .then(stories => {
+            
+            // Sort stories by date in descending order
+            stories.sort((a, b) => new Date(b.date) - new Date(a.date));
+
             const storiesSection = document.getElementById('stories');
             storiesSection.innerHTML = ''; // Clear existing content
             stories.forEach(story => {
